@@ -37,7 +37,8 @@ export default async function handler(req, res) {
   const includeMTOP = ageRange?.includes("5–12");
 
   const userMessage = `
-You are a qualified early childhood or school-age educator in Australia. Create a structured **Learning Story** using the following details:
+You are a qualified early childhood or school-age educator in Australia. Based on the details below, write a structured Learning Story that captures the child's experience, learning, and development in a reflective, strengths-based narrative. Use British English, and write with warmth, professionalism, and clarity appropriate for a parent or carer audience.
+Include links to the Early Years Learning Framework v2.0 (EYLF), and reference My Time, Our Place (MTOP) where applicable (especially for school-age children). Cite relevant sub-outcome numbers where possible.
 
 - Child's Name: ${childName}
 - Age Range: ${ageRange}
@@ -49,13 +50,26 @@ You are a qualified early childhood or school-age educator in Australia. Create 
 Write the story as a reflective, narrative-style observation written in British English. Link to **EYLF v2.0**, and include **MTOP** where relevant (especially for school-age children). Reference specific sub-outcome numbers where appropriate.
 
 Use Markdown formatting with these headings:
-# Learning Story: [Insert Story Title]  
+# Learning Story: [Insert a meaningful title inspired by the child's voice or observed learning]  
+
 ## Observation Summary  
+Briefly describe what occurred, where, and who was involved. Focus on the child's engagement, actions, and interactions. Set the scene clearly and reflectively.
+
 ## Child's Learning and Development  
+Describe the developmental significance of the observed experience. Comment on emerging dispositions, skills, relationships, and agency. Use rich, professional language that aligns with EYLF or MTOP perspectives.
+
 ## Learning Outcomes (EYLF${includeMTOP ? " / MTOP" : ""})  
+List the specific learning outcomes and sub-outcome numbers that relate to the child’s observed development. Briefly justify each link (e.g. “Outcome 1.1 – demonstrates a strong sense of identity through confident exploration”).
+
 ## Educator Reflection  
+Reflect on what this experience tells us about the child. What surprised, delighted, or challenged you as the educator? What are the next steps for supporting this child’s learning journey?
+
 ## Child's Voice  
-## Ideas for Home Extension
+Include direct quote(s) that capture the child’s perspective, curiosity, or emotional engagement. Present them naturally (e.g. “That one’s flying like a rocket!”).
+
+## Ideas for Home Extension  
+Offer a few simple, practical ideas that families can try at home to continue or build on this learning. Ensure they are age-appropriate, engaging, and inclusive.
+
 `;
 
   try {
