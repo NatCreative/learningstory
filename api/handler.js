@@ -53,7 +53,7 @@ Use Markdown formatting with these headings:
 # Learning Story: [Insert a meaningful title inspired by the child's voice or observed learning]  
 
 ## Observation Summary  
-Briefly describe what occurred, where, and who was involved. Focus on the child's engagement, actions, and interactions. Set the scene clearly and reflectively.
+Look at ${learningDescription} and expand appropriatly. Do not embelish. Just state the facts in a way ${childName}'s parents would be interested.
 
 ## Child's Learning and Development  
 Describe the developmental significance of the observed experience. Comment on emerging dispositions, skills, relationships, and agency. Use rich, professional language that aligns with EYLF or MTOP perspectives.
