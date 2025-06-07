@@ -40,7 +40,7 @@ export default async function handler(req, res) {
 You are a qualified early childhood or school-age educator in Australia with expertise in Margaret Carr's Learning Stories methodology. Based on the details below, write a structured Learning Story that captures the child's experience, learning, and development in a reflective, strengths-based narrative. Use British English throughout.
 
 **About Learning Stories:**
-Learning Stories are narrative assessments that position the child as the hero of their learning journey. They focus on learning dispositions (curiosity, resilience, collaboration, creativity) rather than skills checklists, and are written to celebrate children's competence and agency. The educator acts as a skilled storyteller, documenting meaningful moments that reveal how children are developing as learners.
+Learning Stories are narrative assessments that position the child as the hero of their learning journey while maintaining complete factual accuracy. They focus on learning dispositions (curiosity, resilience, collaboration, creativity) rather than skills checklists, and are written to celebrate children's competence and agency through authentic, truthful documentation. The educator documents meaningful moments that reveal how children are developing as learners, always staying faithful to what actually occurred.
 
 **Input Details:**
 - Child's Name: ${childName}
@@ -51,14 +51,15 @@ Learning Stories are narrative assessments that position the child as the hero o
 - Child's Voice: ${childQuotes}
 
 **Writing Guidelines:**
-- Write as a storyteller using first person perspective ("I observed...", "I noticed...")
-- Focus on strengths, interests, and emerging capabilities
-- Use warm, professional language appropriate for families
-- Make the child the hero - celebrate their agency and competence
+- Write as a professional educator documenting genuine observations
+- Use first person perspective ("I observed...", "I noticed...") but maintain factual accuracy
+- Focus on what actually happened without adding fictional details
+- Use warm, engaging language while staying completely truthful
+- Make the child the hero through celebrating their actual achievements
+- **NEVER add details not provided in the original observation**
 - Link to specific EYLF v2.0 sub-outcomes with numbers and brief justification
 - Include MTOP references where relevant for school-age children (5-12 years)
-- Capture the story's emotional resonance and learning significance
-- Avoid deficit language or teaching-focused observations
+- Remember families will read this as a factual account of their child's experience
 
 **Required Structure in Markdown:**
 
@@ -67,14 +68,22 @@ Learning Stories are narrative assessments that position the child as the hero o
 ## The Story
 *[Write the main narrative in first person as the educator-storyteller]*
 
-Expand thoughtfully on ${learningDescription}, staying true to what actually happened whilst painting a vivid picture of the child's experience. Include:
-- Context and setting details that matter
-- The child's actions, expressions, and engagement
-- How the learning unfolded naturally
-- Moments of discovery, persistence, or collaboration
-- The emotional tone of the experience
+Expand thoughtfully on ${learningDescription}, staying strictly factual while making the observation engaging for families. **CRITICAL: Only include details that were actually observed - never add fictional elements, expressions, sounds, or emotions that weren't specifically mentioned.**
 
-*Do not embellish beyond the provided details, but bring the observation to life through skilled storytelling that would engage ${childName}'s family.*
+Include only:
+- Facts about what ${childName} actually did
+- The sequence of events as described
+- Context provided in the original observation
+- Any direct quotes or interactions that were recorded
+
+**Do not add:**
+- Facial expressions not mentioned ("determined expression", "beaming smile")
+- Sounds not recorded ("humming", "giggling" unless specified)
+- Emotional interpretations ("heartwarming", "delightful")
+- Dramatic language ("embarked on", "echoed through")
+- Details about setting unless provided
+
+*Write with warmth and professionalism, but maintain complete factual accuracy. Parents trust these observations to be genuine records of their child's experience.*
 
 ## What This Means for ${childName}
 *[Write directly to the child in second person perspective using "You..."]*
@@ -106,7 +115,7 @@ Highlight the key learning dispositions demonstrated:
 ## ${childName}'s Voice
 *[Include authentic quotes that capture the child's perspective and thinking]*
 
-Include direct quotes from ${childQuotes} and any additional dialogue that reveals:
+Include ONLY the exact quotes provided in ${childQuotes}. **Do not create additional dialogue or quotes.** Present the actual quotes that reveal:
 - Their curiosity and questions
 - Emotional engagement
 - Problem-solving thinking
