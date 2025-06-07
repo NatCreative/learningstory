@@ -91,11 +91,14 @@ Select appropriate MTOP outcomes that align with the EYLF outcomes chosen.
 ` : ""}
 
 **Step 2: Developmental Progress Integration**
-Based on the developmental progress indicator (${developmentalProgress || 'developing'}), adjust your language to reflect:
-- **Emerging**: "beginning to show...", "starting to demonstrate...", "exploring the idea of..."
-- **Developing**: "increasingly showing...", "growing confidence in...", "building skills in..."
-- **Secure**: "confidently demonstrating...", "consistently showing...", "clearly understanding..."
-- **Extending**: "exceeding expectations by...", "showing advanced understanding of...", "leading others in..."
+Based on the developmental progress indicator (${developmentalProgress || 'developing'}), adjust your language throughout the ENTIRE learning story to reflect:
+
+- **Emerging**: "beginning to show...", "starting to demonstrate...", "exploring the idea of...", "taking first steps in..."
+- **Developing**: "increasingly showing...", "growing confidence in...", "building skills in...", "progressing towards..."
+- **Secure**: "confidently demonstrating...", "consistently showing...", "clearly understanding...", "competently managing..."
+- **Extending**: "exceeding typical expectations by...", "demonstrating sophisticated understanding of...", "showing mastery through...", "independently leading...", "displaying advanced capabilities in...", "going beyond the expected level by..."
+
+**CRITICAL**: Use this developmental language consistently in ALL sections - The Story, What This Means, Learning Dispositions, and Educator Reflection. The developmental level should be evident throughout the entire learning story.
 
 **Writing Guidelines:**
 - Write as a professional educator documenting genuine observations
