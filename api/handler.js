@@ -51,8 +51,8 @@ ${homeExtensionText}
 
 Write using the following structure in Markdown:
 
-# Learning Story Title
-(Choose a short, engaging title that reflects the moment)
+# (Write a short, engaging title that reflects this moment. Include the child's name if appropriate.)
+
 
 ## The Story
 A rich, first-person narrative of what actually happened using phrases like:
