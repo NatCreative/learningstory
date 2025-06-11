@@ -18,21 +18,21 @@ export default async function handler(req, res) {
   if (req.method !== "POST") return res.status(405).json({ message: "Only POST requests allowed" });
 
   const {
-    "child-name": childName,
-    "child-age": childAge,
-    "what-happened": whatHappened,
-    "why-meaningful": whyMeaningful,
-    "who-involved": whoInvolved,
-    "home-extension": homeExtension
+    childName,
+    ageRange,
+    learning,
+    meaning,
+    context,
+    extension
   } = req.body;
 
-  if (!childName || !whatHappened || !whyMeaningful) {
+  if (!childName || !learning || !meaning) {
     return res.status(400).json({ error: "Missing required fields" });
   }
 
-  const includeMTOP = childAge?.includes("5–12");
-  const homeExtensionText = homeExtension
-    ? `Ideas for home extension: ${homeExtension}`
+  const includeMTOP = ageRange?.includes("5–12");
+  const homeExtensionText = extension
+    ? `Ideas for home extension: ${extension}`
     : "Please include 2–3 ways families could naturally extend this learning at home through play or conversation.";
 
   const userMessage = `
@@ -43,10 +43,10 @@ Your Role:
 Using the information provided, write an authentic, strengths-based Learning Story that captures a single meaningful learning moment. Use warm, factual educator language. Avoid dramatic or academic tone. Only include what was observed. Write for families.
 
 Child's Name: ${childName}
-Age Range: ${childAge}
-Specific Moment: ${whatHappened}
-Why it was meaningful: ${whyMeaningful}
-Who else was involved: ${whoInvolved}
+Age Range: ${ageRange}
+Specific Moment: ${learning}
+Why it was meaningful: ${meaning}
+Who else was involved: ${context}
 ${homeExtensionText}
 
 Write using the following structure in Markdown:
